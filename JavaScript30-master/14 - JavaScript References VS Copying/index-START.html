@@ -83,7 +83,7 @@ console.log(missingNumber(missingNumArr))
     // Let's say we have an array
 
 
-    const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
+    
 
     // and we want to make a copy of it.
     // const team = players;
@@ -107,6 +107,8 @@ console.log(missingNumber(missingNumArr))
     // one way
 
     // or create a new array and concat the old one in
+    const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
+   
     const newTeam = [...players];
     newTeam[3] = 'lux'
     console.log(newTeam)
@@ -157,6 +159,8 @@ console.log(missingNumber(missingNumArr))
     dev2.social.twitter = '@changed'
     console.log(dev2)
 
+
+// merge sort array
  const a = [1,2,4,6,7,10];
  const b = [3,6,8,12,13,100];
 
@@ -173,21 +177,35 @@ let timeTwo = '01:00PM';
 function convertTime(time) {
   if(time.endsWith('PM')) {
     let hour = time.slice(1,2) 
-    let hourNum = JSON.parse(hour) + 12
-    let mins = time.slice(3,5);
-    let milTime = JSON.stringify(hourNum + mins);
+        hourNum = JSON.parse(hour) + 12
+        mins = time.slice(3,5);
+        milTime = JSON.stringify(hourNum + mins);
     return milTime 
   } else if(time.endsWith('AM')) {
     let hour = time.slice(0,2);
-    let mins = time.slice(3,5);
-    let milTime = JSON.stringify(hour + mins);
+        mins = time.slice(3,5);
+        milTime = JSON.stringify(hour + mins);
     return milTime 
   }
 
 }
 
-console.log(convertTime(timeTwo))
+console.log(convertTime(timeOne))
 
+function to_nato(words) {
+	let [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z] = ['Alfa', 'Bravo', 'Charlie', 'Delta', 'Echo', 'Foxtrot', 'Golf', 'Hotel', 'India', 'Juliett', 'Kilo', 'Lima', 'Mike', 'November', 'Oscar', 'Papa', 'Quebec', 'Romeo', 'Sierra', 'Tango', 'Uniform', 'Victor', 'Whiskey', 'Xray', 'Yankee', 'Zulu']
+  let splitWord = words.split(' ');
+  console.log(splitWord)
+  let newArr = []
+  splitWord.forEach(word => newArr.push(word.substring(0,1)));
+  console.log(newArr)
+  switch(newArr){
+    case 1: newArr[0] == "a"
+    return a
+  }
+}
+
+to_nato('all all')
 
 
 
