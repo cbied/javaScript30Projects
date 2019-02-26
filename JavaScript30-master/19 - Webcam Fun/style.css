@@ -25,9 +25,10 @@ html {
   clear: both;
 }
 
+
 .photo {
-  width: 100%;
-  float: left;
+  width: 80%;
+  margin-left: 20%;
 }
 
 .player {
